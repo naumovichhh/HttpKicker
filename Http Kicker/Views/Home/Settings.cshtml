@@ -1,0 +1,23 @@
+﻿@model Settings
+
+@{
+    ViewData["Title"] = "Settings";
+}
+
+<div class="text-center row justify-content-center">
+    <form class="col-sm-6" asp-action="Save" method="post">
+        <div class="form-group">
+            <label asp-for="URL"></label>
+            <input class="form-control" asp-for="URL" />
+            <span asp-validation-for="URL" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Interval"></label>
+            <input class="form-control" asp-for="Interval" type="time" step="1" />
+            <span asp-validation-for="Interval" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="Apply" />
+        </div>
+    </form>
+</div>

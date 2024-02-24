@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="col-sm-7">
+        <label for="log">Log:</label>
+        <textarea readonly class="form-control" id="log" rows="5" style="resize: none;"></textarea>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script src="~/js/updateLog.js"></script>
+}
